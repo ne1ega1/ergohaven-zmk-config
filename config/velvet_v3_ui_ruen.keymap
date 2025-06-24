@@ -37,12 +37,12 @@
         };
 
         gf {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&en LEFT_BRACKET>;
             key-positions = <4 5>;
         };
 
         yu {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&en RIGHT_BRACKET>;
             key-positions = <6 7>;
         };
 
@@ -57,7 +57,7 @@
         };
 
         m, {
-            bindings = <&kp SINGLE_QUOTE>;
+            bindings = <&en SINGLE_QUOTE>;
             key-positions = <31 32>;
         };
 
@@ -72,7 +72,7 @@
         };
 
         cv {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&en DOUBLE_QUOTES>;
             key-positions = <27 28>;
         };
 
@@ -87,37 +87,37 @@
         };
 
         vb {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&en LEFT_BRACE>;
             key-positions = <28 29>;
         };
 
         nm {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&en RIGHT_BRACE>;
             key-positions = <30 31>;
         };
 
         kl {
-            bindings = <&kp SLASH>;
+            bindings = <&en SLASH>;
             key-positions = <20 21>;
         };
 
         slash {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&en BACKSLASH>;
             key-positions = <32 33>;
         };
 
         io {
-            bindings = <&kp PIPE>;
+            bindings = <&en PIPE>;
             key-positions = <8 9>;
         };
 
         we {
-            bindings = <&kp CARET>;
+            bindings = <&en CARET>;
             key-positions = <2 3>;
         };
 
         sd {
-            bindings = <&kp DOLLAR>;
+            bindings = <&en DOLLAR>;
             key-positions = <14 15>;
         };
 
@@ -196,8 +196,8 @@
         nav {
             bindings = <
 &trans  &trans  &kp HOME  &kp UP           &kp PAGE_UP    &kp PRINTSCREEN                        &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18
-&trans  &trans  &kp LEFT  &kp DOWN         &kp RIGHT      &kp LC(PRINTSCREEN)                    &kp F19  &kp F20  &kp F21  &kp F22  &kp F23  &kp F24
-&trans  &trans  &kp END   &kp GRAVE        &kp PAGE_DOWN  &kp DEL                                &trans   &trans   &trans   &trans   &trans   &kp LG(P)
+&trans  &trans  &kp LEFT  &kp DOWN         &kp RIGHT      &kp LC(PRINTSCREEN)                    &trans   &kp F20  &kp F21  &kp F22  &kp F23  &kp LG(P)
+&trans  &trans  &kp END   &en GRAVE        &kp PAGE_DOWN  &kp DEL                                &trans   &trans   &trans   &trans   &trans   &trans
                 &trans    &kp EXCLAMATION  &trans         &trans               &trans    &trans  &mo 5    &trans   &trans   &trans
             >;
 
@@ -208,7 +208,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp N1     &kp N2     &kp N3    &kp N4       &kp N5     &trans
 &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                    &kp N6     &kp N7     &kp N8    &kp N9       &kp N0     &trans
-&trans  &trans  &trans  &trans   &trans   &trans                     &layer_en  &layer_ru  &kp HASH  &kp AT_SIGN  &kp TILDE  &trans
+&trans  &trans  &trans  &trans   &trans   &trans                     &layer_en  &layer_ru  &en HASH  &en AT_SIGN  &en TILDE  &trans
                 &trans  &trans   &trans   &mo 5    &trans    &trans  &trans     &trans     &trans    &trans
             >;
 
