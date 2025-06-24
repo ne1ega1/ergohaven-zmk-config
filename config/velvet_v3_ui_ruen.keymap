@@ -187,8 +187,8 @@
             display-name = "ru";
             bindings = <
 &kp ESC             &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA    &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSPC
-&mt LEFT_SHIFT TAB  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A     &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_HA
-&kp LCTRL           &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM    &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &kp RU_CYRILLIC_HARD_SIGN
+&mt LEFT_SHIFT TAB  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A     &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LCTRL           &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM    &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
                                              &kp LESS_THAN         &kp LALT            &mt LGUI RU_QUESTION  &lt 2 RU_COMMA      &kp SPACE    &kp RET  &lt 3 RU_DOT        &cap_sen 6 MB1             &kp CAPS             &kp GREATER_THAN
             >;
         };
@@ -197,7 +197,7 @@
             bindings = <
 &trans  &trans  &kp HOME  &kp UP           &kp PAGE_UP    &kp PRINTSCREEN                        &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18
 &trans  &trans  &kp LEFT  &kp DOWN         &kp RIGHT      &kp LC(PRINTSCREEN)                    &kp F19  &kp F20  &kp F21  &kp F22  &kp F23  &kp F24
-&trans  &trans  &kp END   &kp GRAVE        &kp PAGE_DOWN  &kp DEL                                &trans   &trans   &trans   &trans   &trans   &kp LG(I)
+&trans  &trans  &kp END   &kp GRAVE        &kp PAGE_DOWN  &kp DEL                                &trans   &trans   &trans   &trans   &trans   &kp LG(P)
                 &trans    &kp EXCLAMATION  &trans         &trans               &trans    &trans  &mo 5    &trans   &trans   &trans
             >;
 
