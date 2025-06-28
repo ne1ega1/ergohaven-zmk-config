@@ -37,12 +37,12 @@
         };
 
         gf {
-            bindings = <&en LEFT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <4 5>;
         };
 
         yu {
-            bindings = <&en RIGHT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <6 7>;
         };
 
@@ -57,7 +57,7 @@
         };
 
         m, {
-            bindings = <&en SINGLE_QUOTE>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <31 32>;
         };
 
@@ -72,7 +72,7 @@
         };
 
         cv {
-            bindings = <&en DOUBLE_QUOTES>;
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <27 28>;
         };
 
@@ -87,37 +87,37 @@
         };
 
         vb {
-            bindings = <&en LEFT_BRACE>;
+            bindings = <&kp LEFT_BRACE>;
             key-positions = <28 29>;
         };
 
         nm {
-            bindings = <&en RIGHT_BRACE>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
         };
 
         kl {
-            bindings = <&en SLASH>;
+            bindings = <&kp SLASH>;
             key-positions = <20 21>;
         };
 
         slash {
-            bindings = <&en BACKSLASH>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <32 33>;
         };
 
         io {
-            bindings = <&en PIPE>;
+            bindings = <&kp PIPE>;
             key-positions = <8 9>;
         };
 
         we {
-            bindings = <&en CARET>;
+            bindings = <&kp CARET>;
             key-positions = <2 3>;
         };
 
         sd {
-            bindings = <&en DOLLAR>;
+            bindings = <&kp DOLLAR>;
             key-positions = <14 15>;
         };
 
@@ -208,7 +208,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp N1     &kp N2     &kp N3    &kp N4       &kp N5     &trans
 &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                    &kp N6     &kp N7     &kp N8    &kp N9       &kp N0     &trans
-&trans  &trans  &trans  &trans   &trans   &trans                     &layer_en  &layer_ru  &en HASH  &en AT_SIGN  &en TILDE  &trans
+&trans  &trans  &trans  &trans   &trans   &trans                     &layer_en  &layer_ru  &kp HASH  &kp AT_SIGN  &kp TILDE  &trans
                 &trans  &trans   &trans   &mo 5    &trans    &trans  &trans     &trans     &trans    &trans
             >;
 
