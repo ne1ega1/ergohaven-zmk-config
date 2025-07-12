@@ -136,6 +136,134 @@
             bindings = <&en SINGLE_QUOTE>;
             key-positions = <31 32>;
         };
+
+        start_line_en {
+            bindings = <&kp CARET>;
+            key-positions = <2 1>;
+            layers = <0>;
+        };
+
+        start_line_ru {
+            bindings = <&en CARET>;
+            key-positions = <3 2>;
+            layers = <1>;
+        };
+
+        end_line_en {
+            bindings = <&kp DOLLAR>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        end_line_ru {
+            bindings = <&en DOLLAR>;
+            key-positions = <8 9>;
+            layers = <1>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <36 37>;
+        };
+
+        hash_en {
+            bindings = <&kp HASH>;
+            key-positions = <44 45>;
+            layers = <0>;
+        };
+
+        hash_ru {
+            bindings = <&en HASH>;
+            key-positions = <44 45>;
+            layers = <1>;
+        };
+
+        dog_en {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        dog_ru {
+            bindings = <&en AT_SIGN>;
+            key-positions = <26 27>;
+            layers = <1>;
+        };
+
+        ampersand_en {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <32 33>;
+            layers = <0>;
+        };
+
+        ampersand_ru {
+            bindings = <&en AMPERSAND>;
+            key-positions = <32 33>;
+            layers = <1>;
+        };
+
+        backslash_en {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <14 15>;
+            layers = <0>;
+        };
+
+        backslash_ru {
+            bindings = <&en BACKSLASH>;
+            key-positions = <14 15>;
+            layers = <1>;
+        };
+
+        slash_en {
+            bindings = <&kp SLASH>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        slash_ru {
+            bindings = <&en SLASH>;
+            key-positions = <20 21>;
+            layers = <1>;
+        };
+
+        tilde_en {
+            bindings = <&kp TILDE>;
+            key-positions = <2 1>;
+            layers = <0>;
+        };
+
+        tilde_ru {
+            bindings = <&en TILDE>;
+            key-positions = <1 2>;
+            layers = <1>;
+        };
+
+        pipe_en {
+            bindings = <&kp PIPE>;
+            key-positions = <9 10>;
+            layers = <0>;
+        };
+
+        pipe_ru {
+            bindings = <&en PIPE>;
+            key-positions = <9 10>;
+            layers = <1>;
+        };
+
+        number {
+            bindings = <&kp RU_NUMERO>;
+            key-positions = <14 13>;
+        };
+
+        star {
+            bindings = <&kp ASTERISK>;
+            key-positions = <21 22>;
+        };
+
+        io {
+            bindings = <&kp RU_CYRILLIC_IO>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
@@ -185,10 +313,10 @@
 
         en {
             bindings = <
-&kp ESC             &kp Q  &kp W          &kp E      &kp R              &kp T                              &kp Y      &kp U  &kp I      &kp O             &kp P     &kp BSPC
-&mt LEFT_SHIFT TAB  &kp A  &kp S          &kp D      &kp F              &kp G                              &kp H      &kp J  &kp K      &kp L             &kp SEMI  &kp GRAVE
-&kp LCTRL           &kp Z  &kp X          &kp C      &kp V              &kp B                              &kp N      &kp M  &kp COMMA  &kp DOT           &kp SQT   &kp RSHFT
-                           &kp LESS_THAN  &layer_ru  &mt LGUI QUESTION  &lt 2 COMMA  &kp SPACE    &kp RET  &lt 3 DOT  &mo 6  &layer_en  &kp GREATER_THAN
+&kp ESC             &kp Q  &kp W     &kp E      &kp R              &kp T                              &kp Y      &kp U  &kp I      &kp O      &kp P     &kp BSPC
+&mt LEFT_SHIFT TAB  &kp A  &kp S     &kp D      &kp F              &kp G                              &kp H      &kp J  &kp K      &kp L      &kp SEMI  &kp GRAVE
+&kp LCTRL           &kp Z  &kp X     &kp C      &kp V              &kp B                              &kp N      &kp M  &kp COMMA  &kp DOT    &kp SQT   &kp RSHFT
+                           &kp SEMI  &layer_ru  &mt LGUI QUESTION  &lt 2 COMMA  &kp SPACE    &kp RET  &lt 3 DOT  &mo 5  &layer_en  &kp COLON
             >;
 
             display-name = "en";
@@ -200,7 +328,7 @@
 &kp ESC             &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA    &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSPC
 &mt LEFT_SHIFT TAB  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A     &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LCTRL           &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM    &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
-                                             &kp LESS_THAN         &layer_ru           &mt LGUI RU_QUESTION  &lt 2 RU_COMMA      &kp SPACE    &kp RET  &lt 3 RU_DOT        &mo 6                      &layer_en            &kp GREATER_THAN
+                                             &en LS(SEMICOLON)     &layer_ru           &mt LGUI RU_QUESTION  &lt 2 RU_COMMA      &kp SPACE    &kp RET  &lt 3 RU_DOT        &mo 5                      &layer_en            &en COLON
             >;
         };
 
@@ -209,7 +337,7 @@
 &trans  &trans  &kp HOME  &kp UP           &kp PAGE_UP    &kp PRINTSCREEN                        &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18
 &trans  &trans  &kp LEFT  &kp DOWN         &kp RIGHT      &kp LC(PRINTSCREEN)                    &trans   &kp F20  &kp F21  &kp F22  &kp F23  &kp LG(P)
 &trans  &trans  &kp END   &en GRAVE        &kp PAGE_DOWN  &kp DEL                                &trans   &trans   &trans   &trans   &trans   &trans
-                &trans    &kp EXCLAMATION  &trans         &trans               &trans    &trans  &mo 5    &trans   &trans   &trans
+                &trans    &kp EXCLAMATION  &trans         &trans               &trans    &trans  &mo 4    &trans   &trans   &trans
             >;
 
             display-name = "nav";
@@ -220,20 +348,10 @@
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
 &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &trans  &trans  &trans  &trans   &trans   &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans   &trans   &mo 5    &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans   &trans   &mo 4    &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "sym";
-        };
-
-        sym_ru {
-            display-name = "sym_ru";
-            bindings = <
-&kp RU_CYRILLIC_IO  &en HASH          &en LT    &kp EQUAL     &en GT       &en GRAVE                    &en CARET  &kp RU_DQT  &kp UNDER    &en SQT   &trans      &trans
-&kp RU_NUMERO       &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                     &kp PRCNT  &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QMARK
-&trans              &kp RU_COMMA      &kp STAR  &kp RU_COLON  &kp RU_FSLH  &en DLLR                     &en AT     &en PIPE    &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                                      &trans    &trans        &trans       &mo 5      &trans    &trans  &trans     &trans      &en LBKT     &en RBKT
-            >;
         };
 
         adj {
@@ -250,7 +368,7 @@
         mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 7   &mkp MB3  &mkp MB2  &mkp MB1  &mo 8                     &mo 8   &mkp MB1  &mkp MB2  &mkp MB3  &mo 7   &trans
+&trans  &mo 6   &mkp MB3  &mkp MB2  &mkp MB1  &mo 7                     &mo 7   &mkp MB1  &mkp MB2  &mkp MB3  &mo 6   &trans
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
