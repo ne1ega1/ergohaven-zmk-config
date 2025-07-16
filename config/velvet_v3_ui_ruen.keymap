@@ -24,16 +24,14 @@
     combos {
         compatible = "zmk,combos";
 
-        cmben {
-            bindings = <&layer_en>;
-            key-positions = <0 1>;
-            layers = <1>;
-        };
-
-        cmbru {
+        switch_to_ru {
             bindings = <&layer_ru>;
             key-positions = <0 1>;
-            layers = <0>;
+        };
+
+        switch_to_en {
+            bindings = <&layer_en>;
+            key-positions = <10 11>;
         };
 
         left_bracket_en {
@@ -260,15 +258,15 @@
             key-positions = <21 22>;
         };
 
-        apostrophe_en {
-            bindings = <&kp APOSTROPHE>;
-            key-positions = <10 11>;
+        grave_en {
+            bindings = <&kp GRAVE>;
+            key-positions = <34 35>;
             layers = <0>;
         };
 
-        apostrophe_ru {
-            bindings = <&en APOSTROPHE>;
-            key-positions = <10 11>;
+        grave_ru {
+            bindings = <&en GRAVE>;
+            key-positions = <34 35>;
             layers = <1>;
         };
     };
@@ -320,10 +318,10 @@
 
         en {
             bindings = <
-&kp ESC             &kp Q  &kp W     &kp E      &kp R              &kp T                              &kp Y      &kp U  &kp I      &kp O      &kp P     &kp BSPC
-&mt LEFT_SHIFT TAB  &kp A  &kp S     &kp D      &kp F              &kp G                              &kp H      &kp J  &kp K      &kp L      &kp SEMI  &kp GRAVE
-&kp LCTRL           &kp Z  &kp X     &kp C      &kp V              &kp B                              &kp N      &kp M  &kp COMMA  &kp DOT    &kp SQT   &kp RSHFT
-                           &kp SEMI  &layer_ru  &mt LGUI QUESTION  &lt 2 COMMA  &kp SPACE    &kp RET  &lt 3 DOT  &mo 5  &layer_en  &kp COLON
+&kp ESC             &kp Q  &kp W     &kp E            &kp R              &kp T                              &kp Y      &kp U  &kp I      &kp O      &kp P     &kp BSPC
+&mt LEFT_SHIFT TAB  &kp A  &kp S     &kp D            &kp F              &kp G                              &kp H      &kp J  &kp K      &kp L      &kp SEMI  &kp RIGHT_SHIFT
+&kp LCTRL           &kp Z  &kp X     &kp C            &kp V              &kp B                              &kp N      &kp M  &kp COMMA  &kp DOT    &kp SQT   &kp RCTRL
+                           &kp SEMI  &kp EXCLAMATION  &mt LGUI QUESTION  &lt 2 COMMA  &kp SPACE    &kp RET  &lt 3 DOT  &mo 5  &kp GRAVE  &kp COLON
             >;
 
             display-name = "en";
@@ -335,7 +333,7 @@
 &kp ESC             &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA    &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSPC
 &mt LEFT_SHIFT TAB  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A     &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LCTRL           &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM    &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
-                                             &en SEMICOLON         &layer_ru           &mt LGUI RU_QUESTION  &lt 2 RU_COMMA      &kp SPACE    &kp RET  &lt 3 RU_DOT        &mo 5                      &layer_en            &en COLON
+                                             &en SEMICOLON         &kp EXCLAMATION     &mt LGUI RU_QUESTION  &lt 2 RU_COMMA      &kp SPACE    &kp RET  &lt 3 RU_DOT        &mo 5                      &kp RU_CYRILLIC_IO   &en COLON
             >;
         };
 
@@ -375,8 +373,8 @@
         mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 6   &mkp MB3  &mkp MB2  &mkp MB1  &mo 7                     &mo 7   &mkp MB1  &mkp MB2  &mkp MB3  &mo 6   &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &mo 6   &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 6   &trans
+&trans  &trans  &trans    &trans    &mo 7     &trans                    &trans  &mo 7     &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
         };
