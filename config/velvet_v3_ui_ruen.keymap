@@ -248,16 +248,6 @@
             layers = <1>;
         };
 
-        number {
-            bindings = <&kp RU_NUMERO>;
-            key-positions = <14 13>;
-        };
-
-        star {
-            bindings = <&kp ASTERISK>;
-            key-positions = <21 22>;
-        };
-
         grave_en {
             bindings = <&kp GRAVE>;
             key-positions = <34 35>;
@@ -267,6 +257,30 @@
         grave_ru {
             bindings = <&en GRAVE>;
             key-positions = <34 35>;
+            layers = <1>;
+        };
+
+        less_then_en {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <14 13>;
+            layers = <0>;
+        };
+
+        less_then_ru {
+            bindings = <&en LESS_THAN>;
+            key-positions = <13 14>;
+            layers = <1>;
+        };
+
+        greater_then_en {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+
+        greater_then_ru {
+            bindings = <&en GREATER_THAN>;
+            key-positions = <21 22>;
             layers = <1>;
         };
     };
@@ -373,8 +387,8 @@
         mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 6   &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 6   &trans
-&trans  &trans  &trans    &trans    &mo 7     &trans                    &trans  &mo 7     &trans    &trans    &trans  &trans
+&trans  &mo 7   &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 7   &trans
+&trans  &trans  &trans    &trans    &mo 6     &trans                    &trans  &mo 6     &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
         };
