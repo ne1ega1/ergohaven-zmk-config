@@ -42,11 +42,13 @@
         switch_to_ru {
             bindings = <&layer_ru>;
             key-positions = <1 0>;
+            layers = <0>;
         };
 
         switch_to_en {
             bindings = <&layer_en>;
             key-positions = <10 11>;
+            layers = <1>;
         };
 
         left_bracket_en {
