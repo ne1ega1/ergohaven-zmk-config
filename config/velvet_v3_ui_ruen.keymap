@@ -299,6 +299,11 @@
             key-positions = <34 35>;
             layers = <1>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <25 24>;
+        };
     };
 
     macros {
