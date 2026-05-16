@@ -304,6 +304,11 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <25 24>;
         };
+
+        shift+tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <25 26>;
+        };
     };
 
     macros {
